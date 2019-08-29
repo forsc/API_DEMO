@@ -7,6 +7,12 @@ A Simple flask app and DockerFile to provide for parsing required log file
 2. Docker
 3. log file in specified format
 
+## Packages Used
+1. Flask
+2. Flask_restplus
+3. werkzeug
+
+
 ## Input format 
 ```
 GOCACHE=off go test -timeout 20m -v${WHAT:+ -run="$WHAT"} ./test/e2e/
@@ -30,5 +36,7 @@ GOCACHE=off go test -timeout 20m -v${WHAT:+ -run="$WHAT"} ./test/e2e/
   }]
 }
 ```
-
+## Docker File information
+meinheld-gunicorn is used as it provides multiple options for threading 
+https://github.com/tiangolo/meinheld-gunicorn-flask-docker/blob/master/python3.6-alpine3.8/Dockerfile is follwed 
 
