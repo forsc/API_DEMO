@@ -23,7 +23,7 @@ def reader(lines):
                 if len(l)==3:
                     result = {}
                     if 'ENTER' in l[0]:
-                        result["operation"] = str('ENTER')
+                        result["operation"] = str('ENTRY')
                     else:
                         result["operation"] = str('EXIT')
                     result["filename"] = str(l[1].strip())
